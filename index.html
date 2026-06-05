@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIA Everlins | Dados da Empresa</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#ececec;
+    padding:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.header{
+    background:#8B0000;
+    color:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.header h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.header h2{
+    font-size:22px;
+    font-weight:300;
+}
+
+.status{
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 18px;
+    background:#b93c3c;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.actions{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.btn{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.btn-primary{
+    background:#8B0000;
+    color:white;
+}
+
+.btn-secondary{
+    background:white;
+    border:1px solid #ddd;
+}
+
+details{
+    background:white;
+    margin-bottom:15px;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+}
+
+summary{
+    padding:20px;
+    cursor:pointer;
+    font-weight:bold;
+    color:#8B0000;
+    letter-spacing:2px;
+}
+
+.content{
+    padding:25px;
+    border-top:1px solid #eee;
+}
+
+.content p{
+    margin-bottom:12px;
+    line-height:1.7;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#777;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>EVERLINS VEÍCULOS PEÇAS E SERVIÇOS LTDA</h1>
+        <h2>KIA Everlins São José do Rio Preto</h2>
+        <span class="status">SITUAÇÃO ATIVA</span>
+    </div>
+
+    <div class="actions">
+        <button class="btn btn-primary" onclick="window.print()">
+            Imprimir / PDF
+        </button>
+
+        <button class="btn btn-secondary" onclick="copiarTudo()">
+            Copiar Dados
+        </button>
+    </div>
+
+    <details open>
+        <summary>DADOS DA EMPRESA</summary>
+        <div class="content">
+            <p><strong>Razão Social:</strong> Everlins Veículos Peças e Serviços LTDA</p>
+            <p><strong>Nome Fantasia:</strong> Everlins Veículos</p>
+            <p><strong>CNPJ:</strong> 64.110.473/0001-24</p>
+            <p><strong>Situação:</strong> Ativa</p>
+            <p><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</p>
+            <p><strong>Data de Abertura:</strong> 17/12/2025</p>
+            <p><strong>Capital Social:</strong> R$ 3.600.000,00</p>
+            <p><strong>Tipo:</strong> Matriz</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>ENDEREÇO DA SEDE</summary>
+        <div class="content">
+            <p>Rua General Glicério, 4888</p>
+            <p>Centro</p>
+            <p>São José do Rio Preto - SP</p>
+            <p>CEP: 15015-400</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>CONTATO GERENTE COMERCIAL</summary>
+        <div class="content">
+            <p><strong>ANDRÉ SECAFIN</p>
+            <p><strong>Telefone:</strong> (17) 99164-0030</p>
+            <p><strong>E-mail:</strong> andre.secafin@everlinskia.com.br</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>ATIVIDADE ECONÔMICA</summary>
+        <div class="content">
+            <p><strong>CNAE Principal:</strong></p>
+            <p>4511-1/01 - Comércio varejista de automóveis, camionetas e utilitários novos.</p>
+
+            <br>
+
+            <p><strong>Principais atividades complementares:</strong></p>
+
+            <p>• Venda de veículos seminovos</p>
+            <p>• Consignação de veículos</p>
+            <p>• Oficina mecânica</p>
+            <p>• Funilaria e pintura</p>
+            <p>• Alinhamento e balanceamento</p>
+            <p>• Venda de peças e acessórios</p>
+            <p>• Locação de automóveis</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>QUADRO SOCIETÁRIO</summary>
+        <div class="content">
+            
+        </div>
+    </details>
+
+    <div class="footer">
+        Dados consultados em bases públicas empresariais.<br>
+        Atualização automática sujeita às informações da Receita Federal.
+    </div>
+
+</div>
+
+<script>
+
+function copiarTudo(){
+
+const texto = document.body.innerText;
+
+navigator.clipboard.writeText(texto);
+
+alert("Dados copiados com sucesso!");
+
+}
+
+</script>
+
+</body>
+</html>
